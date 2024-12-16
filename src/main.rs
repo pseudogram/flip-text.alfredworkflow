@@ -42,7 +42,7 @@ fn process_argument(arg: &str) -> io::Result<()> {
 fn default_output() -> io::Result<()> {
     let mut items = vec![alfred::ItemBuilder::new("Flip \u{2026}").valid(false).arg("")
                                              .subtitle("Flip typed text").into_item()];
-    for &s in ["(╯°□°）╯︵ ┻━┻", "┬─┬ノ( º _ ºノ)", "┻━┻ ︵ヽ(`Д´)ﾉ︵ ┻━┻ "].iter() {
+    for &s in [""].iter() {
         items.push(alfred::ItemBuilder::new(s).valid(true).arg(s)
                                        .uid(format!("flip {}", s)).into_item());
     }
@@ -50,8 +50,8 @@ fn default_output() -> io::Result<()> {
 }
 
 fn strip(mut s: &str) -> &str {
-    let prefixes: &[&str] = &["(╯°□°）╯︵", "(╯ಠ_ಠ）╯︵", "(ﾉ `Д´)ﾉ ﾐ"];
-    let suffixes: &[&str] = &["ノ( º _ ºノ)"];
+    let prefixes: &[&str] = &[""];
+    let suffixes: &[&str] = &[""];
     s = s.trim();
     for prefix in prefixes {
         s = s.trim_start_matches(prefix).trim_start();

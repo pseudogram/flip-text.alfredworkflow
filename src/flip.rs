@@ -4,8 +4,8 @@ use std::collections::HashMap;
 use std::fmt;
 use std::iter::IntoIterator;
 
-pub const FLIP_PREFIX: &'static str = "(╯°□°）╯︵";
-pub const UNFLIP_SUFFIX: &'static str = "ノ( º _ ºノ)";
+pub const FLIP_PREFIX: &'static str = "";
+pub const UNFLIP_SUFFIX: &'static str = "";
 
 /// The results of a flip or unflip operation.
 pub enum Operation {
