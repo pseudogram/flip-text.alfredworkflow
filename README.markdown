@@ -8,7 +8,7 @@
 
 [Download][] the workflow and double-click to open in Alfred.
 
-[Download]: https://github.com/kballard/flip-text.alfredworkflow/releases/download/v1.0.0/FlipText.alfredworkflow
+[Download]: https://github.com/pseudogram/flip-text.alfredworkflow/releases/download/v1.2.0/Flip.Text.alfredworkflow
 
 ### From Source
 
